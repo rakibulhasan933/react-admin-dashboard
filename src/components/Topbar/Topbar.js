@@ -1,10 +1,10 @@
 import { Language, Notifications, Settings } from '@material-ui/icons';
 import React from 'react';
-import './Topbar.css';
+import './TopBar.css';
 
-const Topbar = () => {
+const TopBar = () => {
     return (
-        <div className='topbar'>
+        <div className='topBar'>
             <div className="topWrapper">
                 <div className="topLeft">
                     <span className="logo">Rakibul</span>
@@ -27,4 +27,4 @@ const Topbar = () => {
     );
 };
 
-export default Topbar;
+export default TopBar;

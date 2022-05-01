@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Topbar from './components/Topbar/Topbar';
+import TopBar from './components/TopBar/TopBar';
 import Home from './pages/Home/Home';
 import HomeMain from './pages/HomeMain/HomeMain';
 import UserList from './pages/UserList/UserList';
@@ -8,7 +8,7 @@ import UserList from './pages/UserList/UserList';
 function App() {
   return (
     <div>
-      <Topbar />
+      <TopBar />
       <Routes>
         <Route path='/' element={<HomeMain />}>
           <Route index element={<Home />} />
