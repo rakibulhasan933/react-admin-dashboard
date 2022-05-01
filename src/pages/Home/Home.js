@@ -7,7 +7,7 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div>
             <FeaturedInfo />
             <Chart />
             <div className="homeWidgets">

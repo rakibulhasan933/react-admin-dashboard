@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    height: calc(100vh -50px);
+    background-color: rgb(255, 240, 240);
+    position: sticky;
+    top: 50px;
+}
+
+.outlet {
+    flex: 4;
+}
