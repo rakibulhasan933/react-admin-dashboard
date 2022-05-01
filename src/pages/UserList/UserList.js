@@ -3,7 +3,7 @@ import './UserList.css';
 
 const UserList = () => {
     return (
-        <div className="userList">
+        <div className='userList'>
             <h1>User</h1>
         </div>
     );
