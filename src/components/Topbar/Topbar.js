@@ -1,7 +1,6 @@
+import { Language, Notifications, Settings } from '@material-ui/icons';
 import React from 'react';
 import './Topbar.css';
-import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
-import { Language, Settings } from '@mui/icons-material';
 
 const Topbar = () => {
     return (
@@ -12,7 +11,7 @@ const Topbar = () => {
                 </div>
                 <div className="topRight">
                     <div className="topIconContainer">
-                        <NotificationsNoneOutlinedIcon />
+                        <Notifications />
                         <span className="topIconBag">2</span>
                     </div>
                     <div className="topIconContainer">
