@@ -27,7 +27,7 @@ const Sidebar = () => {
                 <div className="sidebarMenu">
                     <h3 className="sidebarTittle">Quick Menu</h3>
                     <ul className="sidebarList">
-                        <Link style={{ textDecoration: "none" }} to='/user'><li className="sidebarListItem ">
+                        <Link style={{ textDecoration: "none" }} to='/users'><li className="sidebarListItem ">
                             <PermIdentity className='sidebarIcon' />
                             Users
                         </li>
