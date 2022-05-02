@@ -4,6 +4,7 @@ import TopBar from './components/TopBar/TopBar';
 import AddUser from './pages/AddUser/AddUser';
 import Home from './pages/Home/Home';
 import HomeMain from './pages/HomeMain/HomeMain';
+import NewProduct from './pages/NewProduct/NewProduct';
 import Product from './pages/Product/Product';
 import ProductsList from './pages/ProductsList/ProductsList';
 import User from './pages/User/User';
@@ -19,6 +20,7 @@ function App() {
           <Route path='/users' element={<UserList />} />
           <Route path='/userUpdate/:id' element={<User />} />
           <Route path='/createUser' element={<AddUser />} />
+          <Route path='/crateProducts' element={<NewProduct />} />
           <Route path='/products' element={<ProductsList />} />
           <Route path='/products/:id' element={<Product />} />
         </Route>
