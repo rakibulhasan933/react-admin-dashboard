@@ -1,7 +1,25 @@
+import { Publish } from '@material-ui/icons';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Chart from '../../components/Chart/Chart';
 import './Product.css';
 
 const Product = () => {
+    const productData = [
+        {
+            name: "Jan",
+            "Sales": 4000,
+        },
+        {
+            name: "Feb",
+            "Sales": 3000,
+        },
+        {
+            name: "Mar",
+            "Sales": 5000,
+        },
+    ];
+
     return (
         <div className="product">
             <div className="productTitleContainer">
