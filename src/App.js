@@ -4,6 +4,7 @@ import TopBar from './components/TopBar/TopBar';
 import AddUser from './pages/AddUser/AddUser';
 import Home from './pages/Home/Home';
 import HomeMain from './pages/HomeMain/HomeMain';
+import User from './pages/User/User';
 import UserList from './pages/UserList/UserList';
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
       <Routes>
         <Route path='/' element={<HomeMain />}>
           <Route index element={<Home />} />
-          <Route path='/user' element={<UserList />} />
-          <Route path='/newUser' element={<AddUser />} />
+          <Route path='/users' element={<UserList />} />
+          <Route path='/userUpdate' element={<User />} />
         </Route>
       </Routes>
     </div>
