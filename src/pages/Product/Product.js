@@ -75,7 +75,7 @@ const Product = () => {
                 <form className="productForm">
                     <div className="productFormLeft">
                         <label>Product Name</label>
-                        <input type="text" placeholder="Apple AirPod" />
+                        <input type="text" placeholder="Apple AirPot" />
                         <label>In Stock</label>
                         <select name="inStock" id="idStock">
                             <option value="yes">Yes</option>
