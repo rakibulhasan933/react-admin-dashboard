@@ -1,3 +1,7 @@
+.chartItem {
+    margin-bottom: 20px;
+}
+
 .productTitleContainer {
     display: flex;
     align-items: center;

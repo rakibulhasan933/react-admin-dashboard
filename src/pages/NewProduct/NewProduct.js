@@ -15,8 +15,12 @@ const NewProduct = () => {
                     <input type="text" placeholder="Apple Airpods" />
                 </div>
                 <div className="addProductItem">
+                    <label>Price $</label>
+                    <input type="number" placeholder="123" />
+                </div>
+                <div className="addProductItem">
                     <label>Stock</label>
-                    <input type="text" placeholder="123" />
+                    <input type="number" placeholder="123" />
                 </div>
                 <div className="addProductItem">
                     <label>Active</label>

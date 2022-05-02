@@ -1,7 +1,7 @@
 import { Publish } from '@material-ui/icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Chart from '../../components/Chart/Chart';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis } from 'recharts';
 import './Product.css';
 
 const Product = () => {
@@ -18,6 +18,10 @@ const Product = () => {
             name: "Mar",
             "Sales": 5000,
         },
+        {
+            name: "Apr",
+            "Sales": 6000,
+        },
     ];
 
     return (
@@ -30,7 +34,17 @@ const Product = () => {
             </div>
             <div className="productTop">
                 <div className="productTopLeft">
-                    <Chart data={productData} dataKey="Sales" title="Sales Performance" />
+                    <div className='chart'>
+                        <h3 className="chartItem">Sales Performance</h3>
+                        <ResponsiveContainer width="100%" aspect={4 / 1}>
+                            <LineChart data={productData}>
+                                <XAxis dataKey="name" stroke='#5550bd' />
+                                <Line type='monotone' dataKey='Active User' stroke='#5550bd' />
+                                <Tooltip />
+                                <CartesianGrid stroke='#5550bd' strokeDasharray="5 5" />
+                            </LineChart>
+                        </ResponsiveContainer>
+                    </div>
                 </div>
                 <div className="productTopRight">
                     <div className="productInfoTop">
