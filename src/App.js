@@ -20,7 +20,7 @@ function App() {
           <Route path='/users' element={<UserList />} />
           <Route path='/userUpdate/:id' element={<User />} />
           <Route path='/createUser' element={<AddUser />} />
-          <Route path='/crateProducts' element={<NewProduct />} />
+          <Route path='/createProducts' element={<NewProduct />} />
           <Route path='/products' element={<ProductsList />} />
           <Route path='/products/:id' element={<Product />} />
         </Route>

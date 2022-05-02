@@ -28,7 +28,7 @@ const Product = () => {
         <div className="product">
             <div className="productTitleContainer">
                 <h1 className="productTitle">Product</h1>
-                <Link to="/crateProducts">
+                <Link to="/createProducts">
                     <button className="productAddButton">Create</button>
                 </Link>
             </div>
@@ -36,10 +36,10 @@ const Product = () => {
                 <div className="productTopLeft">
                     <div className='chart'>
                         <h3 className="chartItem">Sales Performance</h3>
-                        <ResponsiveContainer width="100%" aspect={4 / 1}>
+                        <ResponsiveContainer width="50%" aspect={4 / 1}>
                             <LineChart data={productData}>
                                 <XAxis dataKey="name" stroke='#5550bd' />
-                                <Line type='monotone' dataKey='Active User' stroke='#5550bd' />
+                                <Line type='monotone' dataKey='Sales' stroke='#5550bd' />
                                 <Tooltip />
                                 <CartesianGrid stroke='#5550bd' strokeDasharray="5 5" />
                             </LineChart>
