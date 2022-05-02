@@ -16,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path='/users' element={<UserList />} />
           <Route path='/userUpdate' element={<User />} />
+          <Route path='/createUser' element={<AddUser />} />
         </Route>
       </Routes>
     </div>
