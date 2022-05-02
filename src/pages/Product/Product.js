@@ -36,7 +36,7 @@ const Product = () => {
                 <div className="productTopLeft">
                     <div className='chart'>
                         <h3 className="chartItem">Sales Performance</h3>
-                        <ResponsiveContainer width="50%" aspect={4 / 1}>
+                        <ResponsiveContainer width="100%" aspect={4 / 1}>
                             <LineChart data={productData}>
                                 <XAxis dataKey="name" stroke='#5550bd' />
                                 <Line type='monotone' dataKey='Sales' stroke='#5550bd' />
